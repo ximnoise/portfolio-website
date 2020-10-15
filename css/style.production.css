@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 * {
@@ -61,6 +61,7 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -74,6 +75,7 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
