@@ -3,40 +3,161 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home</title>
+    <title>Maximilian Rogge | Full-Stack-Developer</title>
     <link rel="icon" type="image/png" href="./img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <img src="./img/logo.png" alt="" class="page-header__item">
-      <nav class="main-navigation page-header__item">
-        <ul role='menubar' class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
+    <header>
+      <nav>
+        <input class="check" type="checkbox">
+        <div class="ham-menu">
+          <div class="menuline"></div>
+        </div>
+        <ul class='menulist'>
+          <li><a href='#home'>Home</a></li>
+          <li><a href='#work'>Work</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#contact'>Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="profile">
+    <section class="profile" id="home">
       <img src="./img/maximilian-rogge.JPEG" class="profile__portrait" alt="Maximilian Rogge Portrait">
       <div>
-        <h1>Hello World!</h1>
+        <h1 class="background">Hello World!</h1>
         <p>
           My name is Maximilian Rogge. I am a prospective <span>web</span> developer from Germany.
         </p>
         <a href="#">Check out some of my code</a>
+      </div>
+    </section>
+    <section class="projects" id="work">
+      <h1>Projects</h1>
+      <div class="grid">
+        <div class="grid__item">
+          <h2>Portfolio</h2>
+          <p>
+            Within this project, I was responsible for the frontend.
+            It’s written in Vanilla JS. Additionally, I've created the HTML and CSS templates.
+          </p>
+          <a
+            href="https://github.com/ximnoise/portfolio-website"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+        <div class="grid__item">
+          <h2>To-do-list</h2>
+          <p>
+            This small web app is a part of my Bootcamp at CareerFoundry.
+            It contains JQuery code that adds & deletes items and allows crossing out and reordering items.
+          </p>
+          <a
+            href="https://github.com/ximnoise/to-do-list"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+        <div class="grid__item">
+          <h2>Pokedex</h2>
+          <p>
+            This small web app is a part of my Bootcamp at CareerFoundry.
+            It contains HTML, CSS/Bootstrap and JavaScript that loads data from a external Pokemon API and show the data end points in detail.
+          </p>
+          <a
+            href="https://github.com/ximnoise/pokedex"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+        <div class="grid__item">
+          <h2>MyFlix</h2>
+          <p>
+            This web app is a part of my Bootcamp at CareerFoundry.
+            It's a MERN stack app. The frontend is build with React and data flow via Redux. The backend is a RESTful API provides the database to movies and users.
+          </p>
+          <a
+            href="https://github.com/ximnoise/myFlix-client"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github Frontend
+          </a>
+          <br />
+          <a
+            href="https://github.com/ximnoise/myFlix"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github Backend
+          </a>
+        </div>
+        <div class="grid__item">
+          <h2>Meet App</h2>
+          <p>
+            This web app is a part of my Bootcamp at CareerFoundry.
+            Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events. The serverless function is hosted by the cloud provider AWS.
+          </p>
+          <a
+            href="https://github.com/ximnoise/meet"
+            class="projects__link"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+        <div class="grid__item">
+          <h2>Your project?</h2>
+          <p>
+            I can help realizing front-end and back-end projects with the following technologies:
+            React.js, JavaScript, HTML and CSS. I am also happy to learn other technologies if needed.
+          </p>
+          <a href="mailto:me@maximilianrogge.com" class="projects__link">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1>About</h1>
+      <p>
+        My name is Maximilian Rogge, i'm from Germany and 24 years old.<br>
+        In 2013 I started training as an industrial mechanic.<br>
+        I'm working at the moment as an industrial mechanic since 2017.<br>
+        In 2018 I started with game development and programmed smaller mobile games.<br>
+        At the beginning of COVID-19 I switched to web development.<br>
+        On September 21st 2020 I started a Bootcamp at CareerFoundry about web development to change my career.
+      </p>
+      <a href="./files/cv.pdf" class="button" download>Download my CV</a>
+    </section>
+    <section class="contact-section" id="contact">
+      <h1>Contact</h1>
+      <div>
+        Skype: <a href="skype:live:.cid.2b2d750c2281a507">Maximilian Rogge</a><br>
+        Email: <a href="mailto:me@maximiliarogge.com">me@maximilianrogge.com</a><br>
+        <br>
+        <form method="post" id="contact-from">
+          <div>
+            <label class="standard-label" for="contact-email">E-mail: </label>
+            <input type="email" id="contact-email" required>
+          </div>
+          <div>
+            <label class="standard-label" for="contact-tel">Telephone: </label>
+            <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+          </div>
+          <div>
+            <label class="standard-label" for="contact-message">Message: </label>
+            <textarea maxlength="240" id="contact-message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
     <footer class="page-footer">
