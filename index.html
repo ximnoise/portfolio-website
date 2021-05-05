@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Maximilian Rogge | Full-Stack-Developer</title>
-    <link rel="icon" type="image/png" href="./img/favicon.svg">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
   </head>
   <body>
     <header>
@@ -25,148 +25,203 @@
       </nav>
     </header>
     <section class="profile" id="home">
-      <img src="./img/maximilian-rogge.JPEG" class="profile__portrait" alt="Maximilian Rogge Portrait">
-      <div>
-        <h1 class="background">Hello World!</h1>
-        <p>
-          My name is Maximilian Rogge. I am a prospective <span>web</span> developer from Germany.
-        </p>
-        <a href="#">Check out some of my code</a>
+      <div class="profile__container">
+        <div class="profile__top-wrapper">
+          <h1>
+            Hey there, <br />
+            I'm Maximilian
+            <img src="https://media.giphy.com/media/4tSHBpzJw7R3rrKUeo/giphy.gif" width="35px" />
+          </h1>
+          <hr/>
+        </div>
+        <div class="profile__typing-container">
+          <span id="sentence" class="profile__sentence"></span>
+          <span class="profile__input-cursor"></span>
+        </div>
       </div>
     </section>
     <section class="projects" id="work">
       <h1>Projects</h1>
       <div class="grid">
         <div class="grid__item">
-          <h2>Portfolio</h2>
-          <p>
-            Within this project, I was responsible for the frontend.
-            It’s written in Vanilla JS. Additionally, I've created the HTML and CSS templates.
-          </p>
-          <a
-            href="https://github.com/ximnoise/portfolio-website"
-            class="projects__link"
+          <h2>myFlix Frontend</h2>
+          <div class="project__container">
+            <img src="./img/myFlix-frontend.png" class="project__img" alt="myFlix Frontend Preview" />
+            <p class="project__text">
+              This project is an Angular/React application that allows users to get information about movies, genres, and directors. <br />
+              This application uses my existing server-side REST API and MongoDB database.
+            </p>
+          </div>
+          <div class="project__buttons">
+            <a
+            href="https://github.com/ximnoise/myFlix-angular-client"
+            class="btn__light"
             rel="noopener noreferrer"
-          >
-            Github
-          </a>
+            >
+              Github Angular
+            </a>
+            <a
+              href="https://github.com/ximnoise/myFlix-react-client"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Github React
+            </a>
+            <a
+              href="https://ximnoise.github.io/myFlix-angular-client/welcome"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Preview
+            </a>
+          </div>
         </div>
         <div class="grid__item">
-          <h2>To-do-list</h2>
-          <p>
-            This small web app is a part of my Bootcamp at CareerFoundry.
-            It contains JQuery code that adds & deletes items and allows crossing out and reordering items.
-          </p>
-          <a
-            href="https://github.com/ximnoise/to-do-list"
-            class="projects__link"
+          <h2>myFlix Backend</h2>
+          <div class="project__container">
+            <img src="./img/myFlix-backend.png" class="project__img" alt="myFlix Backend Preview" />
+            <p class="project__text">
+              This project is an REST API, based on Node.js and Express with MongoDB as database. <br />
+              That API provide users with access to information about different movies, directors, and genres. <br />
+              Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+            </p>
+          </div>
+          <div class="project__buttons">
+            <a
+            href="https://github.com/ximnoise/myFlix-backend"
+            class="btn__light"
             rel="noopener noreferrer"
-          >
-            Github
-          </a>
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>Comgear</h2>
+          <div class="project__container">
+            <img src="./img/comgear.png" class="project__img" alt="Comgear Preview" />
+            <p class="project__text">
+              This project is an mobile chat app built with React Native and Expo that stores data with Google Firebase. <br />
+              Users can send messages and are able to share images and location.
+            </p>
+          </div>
+          <div class="project__buttons">
+            <a
+            href="https://github.com/ximnoise/comgear"
+            class="btn__light"
+            rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>Meet</h2>
+          <div class="project__container">
+            <img src="./img/meet.png" class="project__img" alt="Meet Preview" />
+            <p class="project__text">
+              Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. <br />
+              The application uses the Google Calendar API to fetch upcoming events. <br />
+              The serverless function is hosted by the cloud provider AWS.
+            </p>
+          </div>
+          <div class="project__buttons">
+            <a
+              href="https://github.com/ximnoise/meet"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+            <a
+              href="https://ximnoise.github.io/meet/"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Preview
+            </a>
+          </div>
         </div>
         <div class="grid__item">
           <h2>Pokedex</h2>
-          <p>
-            This small web app is a part of my Bootcamp at CareerFoundry.
-            It contains HTML, CSS/Bootstrap and JavaScript that loads data from a external Pokemon API and show the data end points in detail.
-          </p>
-          <a
-            href="https://github.com/ximnoise/pokedex"
-            class="projects__link"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-        </div>
-        <div class="grid__item">
-          <h2>MyFlix</h2>
-          <p>
-            This web app is a part of my Bootcamp at CareerFoundry.
-            It's a MERN stack app. The frontend is build with React and data flow via Redux. The backend is a RESTful API provides the database to movies and users.
-          </p>
-          <a
-            href="https://github.com/ximnoise/myFlix-client"
-            class="projects__link"
-            rel="noopener noreferrer"
-          >
-            Github Frontend
-          </a>
-          <br />
-          <a
-            href="https://github.com/ximnoise/myFlix"
-            class="projects__link"
-            rel="noopener noreferrer"
-          >
-            Github Backend
-          </a>
-        </div>
-        <div class="grid__item">
-          <h2>Meet App</h2>
-          <p>
-            This web app is a part of my Bootcamp at CareerFoundry.
-            Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events. The serverless function is hosted by the cloud provider AWS.
-          </p>
-          <a
-            href="https://github.com/ximnoise/meet"
-            class="projects__link"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
+          <div class="project__container">
+            <img src="./img/pokedex.png" class="project__img" alt="Pokedex Preview" />
+            <p class="project__text">
+              This small web application with HTML, CSS, Bootstrap and JavaScript that loads data <br />
+              from an external Pokemon API and enables the viewing of data points in detail.
+            </p>
+          </div>
+          <div class="project__buttons">
+            <a
+              href="https://github.com/ximnoise/pokedex"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+            <a
+              href="https://ximnoise.github.io/pokedex"
+              class="btn__light"
+              rel="noopener noreferrer"
+            >
+              Preview
+            </a>
+          </div>
         </div>
         <div class="grid__item">
           <h2>Your project?</h2>
-          <p>
-            I can help realizing front-end and back-end projects with the following technologies:
-            React.js, JavaScript, HTML and CSS. I am also happy to learn other technologies if needed.
+          <p class="project__text">
+            I can help realizing front-end and back-end projects with the following technologies: <br />
+            React.js, JavaScript, HTML and CSS. <br />
+            I am also happy to learn other technologies if needed.
           </p>
-          <a href="mailto:me@maximilianrogge.com" class="projects__link">Contact Me</a>
+          <a href="#contact" class="btn__light">Contact Me</a>
         </div>
       </div>
     </section>
     <section class="about" id="about">
-      <h1>About</h1>
-      <p>
-        My name is Maximilian Rogge, i'm from Germany and 24 years old.<br>
-        In 2013 I started training as an industrial mechanic.<br>
-        I'm working at the moment as an industrial mechanic since 2017.<br>
-        In 2018 I started with game development and programmed smaller mobile games.<br>
-        At the beginning of COVID-19 I switched to web development.<br>
-        On September 21st 2020 I started a Bootcamp at CareerFoundry about web development to change my career.
-      </p>
-      <a href="./files/cv.pdf" class="button" download>Download my CV</a>
+      <h1>Who I am</h1>
+      <div class="about__wrapper">
+        <p class="about__text">
+          I'm a <strong>Full-Stack-Developer</strong>, industrial mechanic and a nerd.
+          I'm motivated by <strong>creating</strong> thinks for people.
+          Through my working experiences as industrial mechanic and group lead, I developed <strong>empathy</strong>, attention to detail and working in a coordinated structured environment.
+          In 2017 I started with game development as an hobby.
+          After creating a few little mobile games I fell in love with <strong>coding</strong>.
+          In 2020 I switched over to web development and I set myself the goal of working in this industry.
+          On September 21st I started a <strong>Bootcamp</strong> at CareerFoundry to learn in a professional way. <br />
+          <a href="#" class="btn__dark">Download my CV</a>
+        </p>
+        <img src="img/maximilian-rogge.JPEG" class="about__img" alt="Maximilian Rogge Portrait" />
+      </div>
     </section>
-    <section class="contact-section" id="contact">
+    <section class="contact" id="contact">
       <h1>Contact</h1>
-      <div>
-        Skype: <a href="skype:live:.cid.2b2d750c2281a507">Maximilian Rogge</a><br>
-        Email: <a href="mailto:me@maximiliarogge.com">me@maximilianrogge.com</a><br>
-        <br>
-        <form method="post" id="contact-from">
-          <div>
-            <label class="standard-label" for="contact-email">E-mail: </label>
-            <input type="email" id="contact-email" required>
-          </div>
-          <div>
-            <label class="standard-label" for="contact-tel">Telephone: </label>
-            <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-          </div>
-          <div>
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea maxlength="240" id="contact-message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
+      <div class="contact__container">
+        <form name="contact" method="POST" netlify>
+          <input name="name" type="text" class="contact__input" placeholder="Enter your name" aria-placeholder="Enter your name" required />
+          <input name="email" type="email" class="contact__input" placeholder="Enter your email" aria-placeholder="Enter your email" required />
+          <textarea name="message" class="contact__input contact__textarea" placeholder="Enter your message" aria-placeholder="Enter your message" required></textarea>
+          <button type="submit" class="btn__dark">Send Me a Message</button>
         </form>
       </div>
     </section>
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a href="https://github.com/ximnoise"><img src="./img/github.svg" alt="Github"></a>
-        <a href="https://twitter.com/ximnoise"><img src="./img/twitter.svg" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/maximilian-rogge-5717461b9/"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+    <footer class="footer">
+      <h3>Find me on</h3>
+      <div>
+        <a href="https://github.com/ximnoise" rel="noopener noreferrer">
+          <img src="./img/github.svg" class="social-media__icon" alt="Github" />
+        </a>
+        <a href="https://twitter.com/ximnoise" rel="noopener noreferrer">
+          <img src="./img/twitter.svg" class="social-media__icon" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/maximilian-rogge-5717461b9/" rel="noopener noreferrer">
+          <img src="./img/linkedin.svg" class="social-media__icon" alt="LinkedIn" />
+        </a>
+        <p>Made with ♥︎ by <strong>me</strong> - © 2021.</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
