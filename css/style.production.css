@@ -381,54 +381,16 @@ header{
   background: var(--bg-color-dark);
 }
 
-.contact__container {
-  width: 400px;
-  background-color: var(--bg-color-light);
-}
-
-form {
-  margin: 20px;
-}
-
-.contact__input {
-  width: 350px;
-  height: 40px;
-  margin-top: 20px;
-  padding-left: 10px;
-  border: 1px solid var(--text-color-dark);
-  border-radius: 14px;
-  outline: none;
-  text-align: left;
-}
-
-.contact__textarea {
-  height: 150px;
-  padding-top: 10px;
-}
-
-
-/* Footer Section */
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  height: 150px;
-  padding-top: 10px;
-  background-color: var(--bg-color-light);
-}
-
 .social-media__icon {
-  height: 40px;
+  height: 50px;
   width: auto;
   margin: 10px;
+  padding-bottom: 10px;
 }
 
+.bottom-text {
+  font-size: 14px;
+}
 
 /* Animations */
 
@@ -535,13 +497,5 @@ form {
     bottom: -10px;
     right: 0px;
     width: 250px;
-  }
-
-  /* Contact Section Query's */
-  .contact__container {
-    width: 350px;
-  }
-  .contact__input {
-    width: 300px;
   }
 }
